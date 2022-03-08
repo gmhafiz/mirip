@@ -11,7 +11,7 @@ Install with
 # Go 1.16+
 go install https://github.com/gmhafiz/mirip/cmd/mirip@latest
 
-$ Go <= 1.15
+# Go <= 1.15
 GO111MODULE=on go get -u https://github.com/gmhafiz/mirip/cmd@latest
 ```
 
