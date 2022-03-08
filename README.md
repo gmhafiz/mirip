@@ -7,11 +7,13 @@ based on the guide in https://quii.gitbook.io/learn-go-with-tests/questions-and-
 
 Install with
 
-    # Go 1.16+
-    go install https://github.com/gmhafiz/mirip/cmd/mirip@latest
+```shell
+# Go 1.16+
+go install https://github.com/gmhafiz/mirip/cmd/mirip@latest
 
-    $ Go <= 1.15
-    GO111MODULE=on go get -u https://github.com/gmhafiz/mirip/cmd@latest
+$ Go <= 1.15
+GO111MODULE=on go get -u https://github.com/gmhafiz/mirip/cmd@latest
+```
 
 # Usage
 
@@ -61,4 +63,19 @@ func (m *MyInterfaceMock) Three() string {
 func (m *MyInterfaceMock) Two() int {
 	return m.TwoFunc()
 }
+```
+
+## From CLI
+
+Run all of your `go generate`
+
+```shell
+go generate ./...
+```
+
+Or individually
+
+```shell
+cd <your interface path>
+go generate .
 ```
