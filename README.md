@@ -79,3 +79,10 @@ Or individually
 cd <your interface path>
 go generate .
 ```
+
+# Troubleshoot
+
+Getting a panic `log.Fatalf("internal error: package %q without types was imported from %q", path, lpkg`
+` ?
+
+Use Go version earlier than 1.18
