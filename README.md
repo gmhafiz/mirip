@@ -9,10 +9,10 @@ Install with
 
 ```shell
 # Go 1.16+
-go install https://github.com/gmhafiz/mirip/cmd/mirip@latest
+go install github.com/gmhafiz/mirip/cmd/mirip@latest
 
 # Go <= 1.15
-GO111MODULE=on go get -u https://github.com/gmhafiz/mirip/cmd@latest
+GO111MODULE=on go get -u github.com/gmhafiz/mirip/cmd/mirip@latest
 ```
 
 # Usage
