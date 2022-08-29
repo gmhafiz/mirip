@@ -6,7 +6,6 @@ import (
 	"flag"
 	"fmt"
 	"io"
-	"io/ioutil"
 	"os"
 	"path/filepath"
 
@@ -100,5 +99,5 @@ func run(flags userFlags) error {
 		return err
 	}
 
-	return ioutil.WriteFile(flags.outFile, buf.Bytes(), 0600)
+	return os.WriteFile(flags.outFile, buf.Bytes(), 0600)
 }
